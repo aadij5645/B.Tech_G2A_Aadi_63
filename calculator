@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main()
+{
+    char ch;
+    int a,b,s;
+    printf("Enter an operator\n");
+    scanf("%c",&ch);
+    printf("Enter the numbers\n");
+    scanf("%d %d",&a,&b);
+    switch(ch)
+    {
+        case '+':
+        {
+            s=a+b;
+            break;
+        }
+        case '-':
+        {
+            s=a-b;
+            break;
+        }
+        case '*':
+        {
+            s=a*b;
+            break;
+        }
+        case '/':
+        {
+            s=a/b;
+            break;
+        }
+        case '%':
+        {
+            s=a%b;
+            break;
+        }
+        default:
+        printf("Invalid input");
+    }
+    printf("Result is %d",s);
+}
