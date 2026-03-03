@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e,sum,percentage;
+    printf("Enter marks of 5 sebjects\n");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    sum = a+b+c+d+e;
+    percentage=sum/5;
+    printf("Total marks obtained by the student are %d\n",sum);
+    printf("The percentage of the student is %d\n",percentage);
+}
