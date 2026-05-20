@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    void ans(int a[], int n);
+    int a[100], i,n;
+    printf("Enter limit of array\n");
+    scanf("%d",&n);
+    printf("Enter list\n");
+    for(i=0; i<n; i++)
+    {
+    scanf("%d",&a[i]); 
+    }
+    ans(a,n);
+    for(i=0; i<n; i++)
+    {
+    printf("%d",a[i]); 
+    }
+}
+void ans(int a[], int n)
+{ 
+    int j, temp,min;
+    for( int i=0; i<n-1; i++)
+    {
+        min = i;
+        for(j=i+1; j<n; j++)
+        {
+            if(a[j]<a[min])
+            {
+                min =j;
+            }
+        }
+        temp = a[i];
+        a[i] = a[min];
+        a[min]=temp;
+    }
+}
