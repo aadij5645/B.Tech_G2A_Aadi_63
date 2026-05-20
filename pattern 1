@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,n;
+    printf("Enter number of rows and columns");
+    scanf("%d",&n);
+    int row = n*(n+1)/2;
+    for(a=1; a<=row; a++)
+    {
+        for(b=1; b<=a; b++)
+        {
+            printf("%d\t",row);
+            row--;
+        }
+        printf("\n");
+    }
+    return 0;
+}
